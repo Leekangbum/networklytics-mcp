@@ -26,7 +26,7 @@ networklytics-mcp = "networklytics_mcp.server:main"
 
 [project.urls]
 Homepage = "https://networklytics.net"
-Repository = "https://github.com/Leekangbum/networklytics_new/tree/main/networklytics_mcp"
+Repository = "https://github.com/Leekangbum/networklytics-mcp"
 Documentation = "https://networklytics.net/api/v1/schema/"
 
 [tool.hatch.build.targets.wheel]
