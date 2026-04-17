@@ -1,22 +1,12 @@
 startCommand:
-  type: stdio
+  type: http
+  url: https://networklytics.net/api/v1/mcp/
   configSchema:
     type: object
     properties:
-      apiUrl:
-        type: string
-        description: "NetworkLytics API URL (default: https://networklytics.net)"
-        default: "https://networklytics.net"
       apiKey:
         type: string
-        description: "NetworkLytics API key — required for private analysis access. Get yours at https://networklytics.net/accounts/settings/"
+        description: "NetworkLytics API key — required only for private analysis access (get_analysis_by_id). Get yours at https://networklytics.net/accounts/settings/"
     required: []
-  commandFunction: |-
-    (config) => ({
-      command: "uvx",
-      args: ["networklytics-mcp"],
-      env: {
-        NETWORKLYTICS_API_URL: config.apiUrl || "https://networklytics.net",
-        ...(config.apiKey ? { NETWORKLYTICS_API_KEY: config.apiKey } : {})
-      }
-    })
+  exampleConfig:
+    apiKey: "nly_your_api_key_here"
