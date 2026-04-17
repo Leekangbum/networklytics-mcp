@@ -13,7 +13,7 @@ Claude Desktop 설정 (~/.claude/claude_desktop_config.json):
         "networklytics": {
           "command": "networklytics-mcp",
           "env": {
-            "NETWORKLYTICS_API_URL": "https://networklytics.com",
+            "NETWORKLYTICS_API_URL": "https://networklytics.net",
             "NETWORKLYTICS_API_KEY": "nly_your_api_key_here"
           }
         }
@@ -39,7 +39,7 @@ except ImportError:
     sys.exit(1)
 
 
-API_URL = os.environ.get('NETWORKLYTICS_API_URL', 'https://networklytics.com').rstrip('/')
+API_URL = os.environ.get('NETWORKLYTICS_API_URL', 'https://networklytics.net').rstrip('/')
 API_KEY = os.environ.get('NETWORKLYTICS_API_KEY', '')
 
 server = Server('networklytics')
