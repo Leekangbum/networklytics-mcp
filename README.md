@@ -1,3 +1,10 @@
+> **⚠️ 서비스 운영 중단 안내**
+> 현재 NetworkLytics 서버가 운영 중단 상태입니다.
+> `NETWORKLYTICS_API_URL`을 로컬 서버 주소로 변경하면 로컬 환경에서는 사용 가능합니다.
+
+---
+
+
 # networklytics-mcp
 
 [NetworkLytics](https://networklytics.net) MCP (Model Context Protocol) server.
